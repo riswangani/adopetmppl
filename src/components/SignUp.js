@@ -10,9 +10,10 @@ const Signup = () => {
     userName: "",
     email: "",
     password: "",
+    address: "",
+    phoneNumber: "",
   });
 
-  // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -22,7 +23,6 @@ const Signup = () => {
     });
   };
 
-  // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     alert("Klik tombol sign up");
@@ -43,19 +43,6 @@ const Signup = () => {
 
                 <Form onSubmit={handleFormSubmit}>
                   <Form.Group>
-                    <Form.Label>Username</Form.Label>
-                    <Form.Control
-                      type="text"
-                      name="userName"
-                      autoComplete="username"
-                      className="form-input"
-                      id="userName"
-                      value={formState.userName}
-                      placeholder="Enter username"
-                      onChange={handleChange}
-                    />
-                  </Form.Group>
-                  <Form.Group>
                     <Form.Label>Email address</Form.Label>
                     <Form.Control
                       type="email"
@@ -68,7 +55,6 @@ const Signup = () => {
                       onChange={handleChange}
                     />
                   </Form.Group>
-
                   <Form.Group>
                     <Form.Label>Password</Form.Label>
                     <Form.Control
@@ -82,6 +68,32 @@ const Signup = () => {
                       onChange={handleChange}
                     />
                   </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Address</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="address"
+                      autoComplete="address"
+                      className="form-input"
+                      id="address"
+                      value={formState.address}
+                      placeholder="Enter Address"
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="phoneNumber"
+                      autoComplete="phoneNumber"
+                      className="form-input"
+                      id="phoneNumber"
+                      value={formState.phoneNumber}
+                      placeholder="Enter Phone Number"
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
                   <button className="btn-find" type="submit">
                     Submit{" "}
                     <span className="shake-paw">
@@ -91,8 +103,6 @@ const Signup = () => {
                 </Form>
               </div>
             </HomeContainer>
-
-            {/* { error && <div>Sign up failed</div> } */}
           </div>
         </div>
       </div>

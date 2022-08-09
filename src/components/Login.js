@@ -9,7 +9,6 @@ import { faBone } from "@fortawesome/free-solid-svg-icons";
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
 
-  // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -98,7 +97,6 @@ const Login = (props) => {
               </Link>
             </Form.Text>
           </Form>
-          {/* {error && <div>Login failed</div>} */}
         </div>
       </HomeContainer>
     </main>

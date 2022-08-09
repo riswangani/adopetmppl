@@ -1,22 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 
-const Pet = (dog) => {
-  // const state = useSelector((state) => {
-  //   return state;
-  // });
-
-  // const dispatch = useDispatch();
-
-  const { image, name, _id } = dog;
-
+const Pet = ({ image, name, id }) => {
   return (
     <>
       <ImageEL>
-        <Link to={`/dogs/${_id}`}>
-          <img src={`${image}`} alt="pet img" style={{ width: "100%" }} />
+        <Link to={`/dogs/${id}`}>
+          <img src={image} alt="pet img" style={{ width: "100%" }} />
         </Link>
         <h4>{name}</h4>
       </ImageEL>

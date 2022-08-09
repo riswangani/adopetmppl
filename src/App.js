@@ -8,6 +8,7 @@ import About from "./components/About";
 import Login from "./components/Login";
 import NoMatch from "./components/NoMatch";
 import Signup from "./components/SignUp";
+import ListUsers from "./components/ListUser";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
+        <Route exact path="/users" component={ListUsers} />
         <Route component={NoMatch} />
       </Switch>
     </div>

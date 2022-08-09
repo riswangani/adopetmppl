@@ -18,6 +18,10 @@ const Sidebar = ({ open, onClick }) => {
           <Link to="/about" className="text-link">
             <li>About</li>
           </Link>
+
+          <Link to="/users" className="text-link">
+            <li>User</li>
+          </Link>
         </>
       }
 
