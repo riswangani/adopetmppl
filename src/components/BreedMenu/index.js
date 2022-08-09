@@ -5,7 +5,7 @@ const BreedMenu = () => {
   return (
     <BreedMenuEL>
       <div className="container">
-        <h1>Filter By</h1>
+        <h1>Search Pet</h1>
       </div>
 
       <div className="container">
@@ -14,7 +14,6 @@ const BreedMenu = () => {
             Name:
             <input type="text" name="name" />
           </label>
-          <input type="submit" value="Submit" />
         </form>
       </div>
     </BreedMenuEL>

@@ -6,7 +6,7 @@ const Pet = ({ image, name, id }) => {
   return (
     <>
       <ImageEL>
-        <Link to={`/dogs/${id}`}>
+        <Link to={`/pet/${id}`}>
           <img src={image} alt="pet img" style={{ width: "100%" }} />
         </Link>
         <h4>{name}</h4>

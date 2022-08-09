@@ -95,7 +95,7 @@ const Signup = () => {
                     />
                   </Form.Group>
                   <button className="btn-find" type="submit">
-                    Submit{" "}
+                    Submit
                     <span className="shake-paw">
                       <FontAwesomeIcon icon={faPaw} />
                     </span>

@@ -9,6 +9,8 @@ import Login from "./components/Login";
 import NoMatch from "./components/NoMatch";
 import Signup from "./components/SignUp";
 import ListUsers from "./components/ListUser";
+import PetDetail from "./components/PetDetail";
+import Donate from "./components/Donate";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/pets" component={Pets} />
+        <Route exact path="/pet/:id" component={PetDetail} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/donate" component={Donate} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/users" component={ListUsers} />
